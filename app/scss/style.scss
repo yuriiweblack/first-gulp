@@ -1,11 +1,144 @@
-// @import 'vars';
-// @import 'fonts';
+@import 'vars';
+@import 'fonts';
 @import 'reset';
-// @import 'global';
+@import 'global';
+
+
+
+.header{
+padding: 40px 0;
+
+ &__inner{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ }
+
+}
+
+.menu{
+ &__list{
+  display: flex;
+ }
+
+ &__list-item + .menu__list-item{
+  padding-left: 35px;
+ }
+
+ &__list-link{
+  color: $title;
+  transition: all .3s;
+  padding-bottom: 2px;
+  @extend %quicksand-400;
+  &:hover{
+   color: $accent;
+   border-bottom: 1px solid $accent;
+   @extend %quicksand-500;
+  }
+
+ }
+
+ &__list-link--active{
+  color: $accent;
+  border-bottom: 1px solid $accent;
+ }
+}
+
+
+
+.user-nav{
+
+ &__link{
+  position: relative;
+ }
+
+ &__link + .user-nav__link{
+  // display: flex;
+  padding-left: 18px;
+ }
+
+ &__num{
+  width: 20px;
+  height: 20px;
+  background-color: $accent;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 12px;
+  line-height: 20px;
+  position: absolute;
+  right: -8px;
+  top: -14px;
+  text-align: center;
+
+ }
+}
+
+
+.footer{
+ background-color: $bg;
+}
+
+.footer-top{
+ &__contact{
+  width: 270px;
+  margin-right: 50px;
+ }
+
+ &__nav{
+  width: 170px;
+  margin-right: 30px;
+ }
+
+ &__item-form{
+  max-width: 470px;
+ }
+
+ &__logo{
+  margin-bottom: 25px;
+  display: block;
+ }
+
+ &__adress,
+ &__email,
+ &__phone{
+  margin-bottom: 10px;
+  display: block;
+ }
+
+ &__social-list{
+  display: flex;
+  margin-top: 30px;
+ }
+
+ &__social-item + .footer-top__social-item{
+  padding-left: 20px;
+ }
+
+ &__social-link{
+  path{
+   fill: $default;
+  }
+  &:hover{
+   path{
+   fill: $accent;
+  }
+  }
+ }
+
+}
+
+
+a{
+ color: $default;
+ font-size: 16px;
+ line-height: 24px;
+ @extend %quicksand-500;
+}
+
+
+
+
+
+
 // @import 'media';
 
-
-.conteiner{
- color: red;
- text-decoration: dotted;
-}
