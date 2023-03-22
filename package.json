@@ -9,6 +9,7 @@
   "author": "Yurii",
   "license": "ISC",
   "devDependencies": {
+    "@fancyapps/fancybox": "^3.5.7",
     "browser-sync": "^2.27.10",
     "del": "^6.1.1",
     "gulp": "^4.0.2",
@@ -18,6 +19,9 @@
     "gulp-sass": "^5.1.0",
     "gulp-uglify": "^3.0.2",
     "jquery": "^3.6.0",
-    "sass": "^1.51.0"
+    "jquery-form-styler": "^2.0.2",
+    "rateyo": "^2.3.2",
+    "sass": "^1.51.0",
+    "slick-carousel": "^1.8.1"
   }
 }
